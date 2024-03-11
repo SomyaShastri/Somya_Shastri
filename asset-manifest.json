@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/somya_shastri/static/css/main.4a060c95.css",
-    "main.js": "/somya_shastri/static/js/main.4d646a0e.js",
-    "static/js/453.acca0757.chunk.js": "/somya_shastri/static/js/453.acca0757.chunk.js",
-    "static/media/background.jpg": "/somya_shastri/static/media/background.cc8a724192d97735733c.jpg",
-    "static/media/SomyaShastri_resume.pdf": "/somya_shastri/static/media/SomyaShastri_resume.f80f2ab43737fb34409e.pdf",
-    "index.html": "/somya_shastri/index.html",
-    "main.4a060c95.css.map": "/somya_shastri/static/css/main.4a060c95.css.map",
-    "main.4d646a0e.js.map": "/somya_shastri/static/js/main.4d646a0e.js.map",
-    "453.acca0757.chunk.js.map": "/somya_shastri/static/js/453.acca0757.chunk.js.map"
+    "main.css": "/Somya_Shastri/static/css/main.cb15ef82.css",
+    "main.js": "/Somya_Shastri/static/js/main.3383232e.js",
+    "static/js/453.acca0757.chunk.js": "/Somya_Shastri/static/js/453.acca0757.chunk.js",
+    "static/media/background.jpg": "/Somya_Shastri/static/media/background.cc8a724192d97735733c.jpg",
+    "static/media/SomyaShastri_resume.pdf": "/Somya_Shastri/static/media/SomyaShastri_resume.f80f2ab43737fb34409e.pdf",
+    "index.html": "/Somya_Shastri/index.html",
+    "main.cb15ef82.css.map": "/Somya_Shastri/static/css/main.cb15ef82.css.map",
+    "main.3383232e.js.map": "/Somya_Shastri/static/js/main.3383232e.js.map",
+    "453.acca0757.chunk.js.map": "/Somya_Shastri/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a060c95.css",
-    "static/js/main.4d646a0e.js"
+    "static/css/main.cb15ef82.css",
+    "static/js/main.3383232e.js"
   ]
 }
