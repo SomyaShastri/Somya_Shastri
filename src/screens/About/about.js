@@ -18,6 +18,7 @@ function About() {
               <Card.Text>
                 <a
                  href="https://viterbischool.usc.edu/"
+                 target="_blank"
                  style={{color: 'inherit', textDecoration: 'none', cursor: 'pointer'}}
                  >
                   <h3>University of Southern California</h3>
@@ -36,6 +37,7 @@ function About() {
               <Card.Text>
               <a
                  href="https://vit.ac.in/"
+                 target="_blank"
                  style={{color: 'inherit', textDecoration: 'none', cursor: 'pointer'}}
                  >
                 <h4>Vellore Institute of Technology</h4>

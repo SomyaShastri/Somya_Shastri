@@ -1,42 +1,4 @@
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import { navigationLinks } from '../../helpers/navigationLinks';
-// import './navigationBar.css'
-
-// function NavigationBar() {
-
-//     const scrollToSection = (ref) => {
-//         const section = document.querySelector(ref);
-//         console.log('Scrolling to:', ref);
-//         if (section) {
-//           console.log('Found section:', section);
-//           section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//         } else {
-//           console.log('Section not found:', ref);
-//         }
-//       };
-  
-
-//   return (
-//     <Navbar expand="lg" className="frosty-bg">
-//       <Container>
-//         <Navbar.Brand href="#home">Somya Shastri</Navbar.Brand>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="ms-auto">
-//             {navigationLinks.map((link, index) => (
-//               <Nav.Link key={index} onClick={() => scrollToSection(`#${link.ref}`)}>{link.name}</Nav.Link>
-//               ))}
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-// export default NavigationBar;
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -44,6 +6,25 @@ import { navigationLinks } from '../../helpers/navigationLinks';
 import './navigationBar.css';
 
 function NavigationBar() {
+  const [currentSection, setCurrentSection] = useState('home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sectionRefs = navigationLinks.map(link => document.querySelector(`#${link.ref}`));
+      
+      for (let i = sectionRefs.length - 1; i >= 0; i--) {
+        const sectionRef = sectionRefs[i];
+        if (sectionRef.offsetTop <= scrollPosition) {
+          setCurrentSection(navigationLinks[i].ref);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (ref) => {
     const section = document.querySelector(ref);
@@ -58,14 +39,18 @@ function NavigationBar() {
 
   return (
     <div className='navBar'>
-    <Navbar expand="lg" className="frosty-bg">
+    <Navbar expand="lg" bg = 'light' fixed = 'top'>
       <Container>
         <Navbar.Brand href="#home">Somya Shastri</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto" variant="underline" defaultActiveKey="/home">
             {navigationLinks.map((link, index) => (
-              <Nav.Link key={index} onClick={() => scrollToSection(`#${link.ref}`)}>{link.name}</Nav.Link>
+              <Nav.Link 
+              key={index} 
+              onClick={() => scrollToSection(`#${link.ref}`)}
+              className={currentSection === link.ref ? 'active' : ''}
+              >{link.name}</Nav.Link>
             ))}
           </Nav>
         </Navbar.Collapse>
