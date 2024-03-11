@@ -1,0 +1,10 @@
+
+.frosty-bg {
+    background: rgba(255, 255, 255, 0.8); /* Adjust the alpha value for opacity */
+    backdrop-filter: blur(50px); /* Add a blur effect */
+}
+ .navBar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

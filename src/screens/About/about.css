@@ -1,0 +1,6 @@
+
+a {
+    color: inherit; /* Use the parent element's text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+  }

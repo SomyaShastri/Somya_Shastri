@@ -1,0 +1,28 @@
+
+.icon {
+    width: 20%; /* Adjust width as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .tech-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+  }  
+
+  .tech-text:hover{
+    transform: scale(1.1);
+  }
+
+  .caption{
+    font-size: 0.8em;
+    margin-bottom: 40px;
+  }
