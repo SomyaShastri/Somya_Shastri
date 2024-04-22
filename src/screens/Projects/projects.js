@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { projectContent } from '../../helpers/projectContent';
 import Col from 'react-bootstrap/Col';
-import visaLogo from './Visa_Inc._logo.svg.png';
+import visaLogo from 'Visa_Inc._logo.svg.png';
 
 
 function Projects() {
