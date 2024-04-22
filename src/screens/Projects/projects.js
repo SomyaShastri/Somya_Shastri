@@ -4,13 +4,21 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { projectContent } from '../../helpers/projectContent';
 import Col from 'react-bootstrap/Col';
+import visaLogo from './Visa_Inc._logo.svg.png';
+
 
 function Projects() {
   return (
+    <div style={{
+      backgroundColor: 'black',
+      color: 'white'
+    }}>
     <div className='p-2 m-3 g-4'>
         <h1>Work Experience</h1>
-        <Card className='m-3'>
-        <Card.Header>VISA Inc.</Card.Header>
+        <Card className='m-3' bg="dark" text="white" key="dark" border="secondary">
+        <Card.Header>VISA Inc.
+        </Card.Header>
+        <Card.Img src={visaLogo} style={{ width: '10%', height: 'auto' }}/>
           <Card.Body>
             <Card.Text>
               Collaborated cross-functionally to provide cryptographic solutions for data protection employing agile methodology. Designed card pin translation functionality
@@ -28,7 +36,7 @@ function Projects() {
       <Row xs={1} md={2}>
         {projectContent.map((project, index) => (
           <Col key={index}>
-            <Card className='m-2'>
+            <Card className='m-2' bg="dark" text="white" key="dark" border="secondary">
             <Card.Header>{project.name}</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -41,7 +49,7 @@ function Projects() {
         ))}
       </Row>
     </div>
-
+    </div>
   )
 }
 

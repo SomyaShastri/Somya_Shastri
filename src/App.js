@@ -46,7 +46,7 @@ function App() {
           <h1>About me</h1>
           <About />
         </Row>
-        <Row id = 'projects' className='section'>
+        <Row id = 'projects' className='section p-0 m-0'>
           <Projects />
         </Row>
         <Row id = 'tech' className='section'>
