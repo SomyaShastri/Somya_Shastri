@@ -41,7 +41,15 @@ function NavigationBar() {
     <div className='navBar'>
     <Navbar expand="lg" bg = 'light' fixed = 'top'>
       <Container>
-        <Navbar.Brand href="#home">Somya Shastri</Navbar.Brand>
+        <Navbar.Brand href="#home">
+        <img
+              src="./logo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              // alt="Somya Shastri logo"
+            />
+            Somya Shastri</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" variant="underline" defaultActiveKey="/home">

@@ -52,7 +52,7 @@ function About() {
         </Col>
       </Row>
       <h3>A software engineer and a full stack developer</h3>
-      <span>
+      <Row >
         During my two years as a Software Engineer at Visa Inc., India, I honed
         my software development skills by providing cryptographic solutions for
         data protection. This experience allowed me to collaborate
@@ -74,7 +74,7 @@ function About() {
         improve my speaking skills. Serving as an executive committee member of
         two clubs has further enhanced my ability to collaborate and lead
         effectively
-      </span>
+      </Row>
       <br />
       <br />
       <br />

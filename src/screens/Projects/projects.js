@@ -4,8 +4,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { projectContent } from '../../helpers/projectContent';
 import Col from 'react-bootstrap/Col';
-import visaLogo from 'Visa_Inc._logo.svg.png';
-
 
 function Projects() {
   return (
@@ -16,10 +14,9 @@ function Projects() {
     <div className='p-2 m-3 g-4'>
         <h1>Work Experience</h1>
         <Card className='m-3' bg="dark" text="white" key="dark" border="secondary">
-        <Card.Header>VISA Inc.
-        </Card.Header>
-        <Card.Img src={visaLogo} style={{ width: '10%', height: 'auto' }}/>
+          <Card.Header>VISA Inc.</Card.Header>
           <Card.Body>
+            <Card.Img src="./Visa_Inc._logo.svg.png" style={{ width: '10%', height: 'auto' }}/>
             <Card.Text>
               Collaborated cross-functionally to provide cryptographic solutions for data protection employing agile methodology. Designed card pin translation functionality
               with REST API to ensure customer pins are securely transferred from payment devices to merchant banks, in Spring. Created a system to sign and verify
