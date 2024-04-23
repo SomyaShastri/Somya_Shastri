@@ -16,7 +16,7 @@ function Projects() {
         <Card className='m-3' bg="dark" text="white" key="dark" border="secondary">
           <Card.Header>VISA Inc.</Card.Header>
           <Card.Body>
-            <Card.Img src="./Visa_Inc._logo.svg.png" style={{ width: '10%', height: 'auto' }}/>
+            <Card.Img src="./Visa-logo.png" style={{ width: '10%', height: 'auto' }}/>
             <Card.Text>
               Collaborated cross-functionally to provide cryptographic solutions for data protection employing agile methodology. Designed card pin translation functionality
               with REST API to ensure customer pins are securely transferred from payment devices to merchant banks, in Spring. Created a system to sign and verify
